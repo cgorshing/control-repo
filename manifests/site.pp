@@ -29,13 +29,4 @@ node default {
   # This is where you can declare classes for all nodes.
   # Example:
   #   class { 'my_class': }
-  file {'/root/README':
-    ensure  => file,
-    content => 'This is a test',
-    owner   => 'root',
-  }
-
-  file {'/root/README':
-    owner   => 'root',
-  }
 }
