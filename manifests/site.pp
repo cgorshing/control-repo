@@ -30,3 +30,7 @@ node default {
   # Example:
   #   class { 'my_class': }
 }
+
+node 'master.puppet.vm' {
+  include role::master_server
+}
