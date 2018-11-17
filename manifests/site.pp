@@ -30,7 +30,8 @@ node default {
   # Example:
   #   class { 'my_class': }
   file {'/root/README':
-    ensure => file,
+    ensure  => file,
     content => 'This is a test',
+    owner   => 'root'
   }
 }
